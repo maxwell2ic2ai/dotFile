@@ -509,6 +509,8 @@ before packages are loaded."
 (fset 'evil-visual-update-x-selection 'ignore)
 ;; Neotree theme
 (setq neo-theme 'nerd)
+;; Center the cursor globally
+(global-centered-cursor-mode +1)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
