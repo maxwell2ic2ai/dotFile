@@ -511,6 +511,13 @@ before packages are loaded."
 (setq neo-theme 'nerd)
 ;; Center the cursor globally
 (global-centered-cursor-mode +1)
+;; Verilog mode
+(setq verilog-auto-endcomments nil)
+(setq verilog-auto-indent-on-newline nil)
+(setq verilog-auto-newline nil)
+(setq verilog-highlight-modules t)
+(setq verilog-highlight-p1800-keywords t)
+
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
