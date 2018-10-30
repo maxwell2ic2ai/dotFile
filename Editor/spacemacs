@@ -512,9 +512,10 @@ before packages are loaded."
 ;; Center the cursor globally
 (global-centered-cursor-mode +1)
 ;; Verilog mode
+(setq verilog-indent-level 4)
 (setq verilog-auto-endcomments nil)
-(setq verilog-auto-indent-on-newline nil)
-(setq verilog-auto-newline nil)
+;; (setq verilog-auto-indent-on-newline nil)
+;; (setq verilog-auto-newline nil)
 (setq verilog-highlight-modules t)
 (setq verilog-highlight-p1800-keywords t)
 
