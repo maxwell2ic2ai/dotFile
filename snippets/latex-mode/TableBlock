@@ -1,0 +1,19 @@
+# -*- mode: snippet -*-
+# name: TableBlock
+# key: TableBlock
+# --
+
+\begin{table}[!htbp]
+\centering
+\bicaption
+{$1}
+{$2}
+\label{tab:$3}
+\begin{tabular}{@{}llr@{}} \toprule
+\multicolumn{2}{c}{$4} \\ \cmidrule(r){1-2}
+$5 & $6 & $7  \\ \midrule
+$0
+$8 & $9 & $10 \\ \bottomrule
+\end{tabular}
+\end{table}
+
