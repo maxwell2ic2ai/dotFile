@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: SingleFigureBlock
+# key: SingleFigureBlock
+# --
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=12cm]{$1.pdf}
+\bicaption
+{$2}
+{$3}
+\label{fig:$1}
+\end{figure}
+
+$0
+
