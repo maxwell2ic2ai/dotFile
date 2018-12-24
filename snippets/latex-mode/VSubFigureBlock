@@ -1,0 +1,22 @@
+# -*- mode: snippet -*-
+# name: VSubFigureBlock
+# key: VSubFigureBlock
+# --
+
+\begin{figure}[!htbp]
+\centering
+\begin{subfigure}{.8\textwidth}
+\centering
+\includegraphics[width=12cm]{$1.pdf}
+\caption{$2}\label{fig:$1}
+\end{subfigure}
+\par\medskip
+\begin{subfigure}{.8\textwidth}
+\centering
+\includegraphics[width=12cm]{$3.pdf}
+\caption{$4}\label{fig:$3}
+\end{subfigure}
+\bicaption{$5}{$6}
+\label{fig:$7}
+\end{figure}
+$
