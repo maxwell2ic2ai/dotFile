@@ -4,15 +4,15 @@
 # --
 \begin{figure}[!htp]
 \centering
-\begin{subfigure}{0.4\textwidth}
+\begin{subfigure}{0.45\textwidth}
 \centering
-\includegraphics[height=2.5cm]{$1.pdf}
+\includegraphics[height=5cm]{$1.pdf}
 \caption{$2}\label{fig:$1}
 \end{subfigure}
-\hspace{4em}
-\begin{subfigure}{0.4\textwidth}
+\hspace{0.05\textwidth}
+\begin{subfigure}{0.45\textwidth}
 \centering
-\includegraphics[height=2.5cm]{$3.pdf}
+\includegraphics[height=5cm]{$3.pdf}
 \caption{$4}\label{fig:$3}
 \end{subfigure}
 \bicaption{$5}{$6}
@@ -20,3 +20,4 @@
 \end{figure}
 
 $0
+
