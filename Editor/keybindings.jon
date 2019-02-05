@@ -1,0 +1,29 @@
+// Place your key bindings in this file to override the defaults
+[
+    // unbind "C-k .", needed to bind C-k as kill line
+  {
+    "command": "-extension.clipToHtml",
+    "key": "ctrl+k .",
+    "when": "editorTextFocus"
+  },
+  // (Optional) bind <C-g> as <ESC>
+  {
+    "key": "ctrl-g",
+    "command": "extension.vim_escape",
+    "when": "editorTextFocus && vim.active && !inDebugRepl"
+  },
+  {
+    "command": "-workbench.action.gotoLine",
+    "key": "ctrl+g"
+  },
+  {
+    "command": "workbench.action.closeQuickOpen",
+    "key": "ctrl-g",
+    "when": "inQuickOpen"
+  },
+  {
+    "command": "workbench.action.exitZenMode",
+    "key": "ctrl-g ctrl-g",
+    "when": "inZenMode"
+  }
+]
