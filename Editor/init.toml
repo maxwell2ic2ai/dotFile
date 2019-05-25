@@ -1,0 +1,145 @@
+#=============================================================================
+# dark_powered.toml --- dark powered configuration example for SpaceVim
+# Copyright (c) 2016-2017 Wang Shidong & Contributors
+# Author: Wang Shidong < wsdjeg at 163.com >
+# URL: https://spacevim.org
+# License: GPLv3
+#=============================================================================
+
+# All SpaceVim option below [option] section
+[options]
+    # set spacevim theme. by default colorscheme layer is not loaded,
+    # if you want to use more colorscheme, please load the colorscheme
+    # layer
+    colorscheme = "molokai"
+    colorscheme_bg = "dark"
+    guifont = "SauceCodePro Nerd Font Mono:h12"
+    default_indent = 4
+    expand_tab = 4
+    relativenumber = false
+    update_retry_cnt = 0
+    # Disable guicolors in basic mode, many terminal do not support 24bit
+    # true colors
+    enable_guicolors = false
+    error_symbol = "+"
+    warning_symbol = "!"
+    info_symbol = "i"
+    # file maneger
+    # - vimfiler
+    # - nerdtree
+    # - defx
+    filemanager = "nerdtree"
+    # plugin_manager
+    # - dein
+    # - neobundle
+    # - vim-plug
+    # plugin_manager = "dein"
+    # checkinstall = false
+    # Disable statusline separator, if you want to use other value, please
+    # install nerd fonts
+    statusline_separator = "nil"
+    statusline_inactive_separator = "bar"
+    enable_statusline_bfpath = true
+    enable_statusline_mode = true
+    statusline_unicode_symbols = false
+
+    # left sections of statusline
+    statusline_left_sections = [
+       'winnr',
+       'filename',
+       'major mode',
+       #'minor mode lighters',
+       'version control info',
+       #'search status'
+    ]
+    # right sections of statusline
+    statusline_right_sections = [
+       'fileformat',
+       'cursorpos',
+       'percentage',
+       'date',
+       'time'
+    ]
+
+    # 'winnr' window number
+    # 'syntax checking'
+    # 'filename' file name
+    # 'fileformat' file format
+    # 'major mode'
+    # 'minor mode lighters'
+    # 'cursorpos' cursor position
+    # 'percentage' content range
+    # 'date' date
+    # 'time' time
+    # 'whitespace' line number with trailing space at the end
+    # 'battery status' battery status
+    # 'input method' input method
+    # 'search status' search index
+
+    buffer_index_type = 4
+    enable_tabline_filetype_icon = false
+    enable_os_fileformat_icon = false
+    enable_powerline_fonts = false
+
+    enable_ycm = false
+    # autocomplete_method = 'neocomplcache'
+
+# Enable spacevim layer
+[[layers]]
+  name = 'autocomplete'
+  auto-completion-return-key-behavior = "smart"
+  auto-completion-tab-key-behavior = "cycle"
+  auto-completion-delay = 100
+
+# [[layers]]
+  # name = 'shell'
+  # enable = false
+
+[[layers]]
+  name = 'VersionControl'
+
+[[layers]]
+  name = 'colorscheme'
+
+[[layers]]
+  name = 'default'
+
+[[layers]]
+  name = 'tools'
+
+[[layers]]
+  name = 'unite'
+
+[[layers]]
+  name = 'lang#sh'
+
+[[layers]]
+  name = 'lang#python'
+  format-on-save = 1
+
+[[layers]]
+  name = "lang#c"
+  clang_executable = "/usr/bin/clang"
+  [layer.clang_std]
+    c = "c11"
+    cpp = "c++1z"
+    objc = "c11"
+    objcpp = "c++1z"
+
+[[layers]]
+  name = "tags"
+
+# Add third-party layer
+#[[custom_plugins]]
+#name = 'nachumk/systemverilog.vim'
+#merged = false
+
+[[custom_plugins]]
+name = 'vhda/verilog_systemverilog.vim'
+merged = false
+
+#[[custom_plugins]]
+#name = 'vim-scripts/verilog_emacsauto.vim'
+#merged = false
+
+
