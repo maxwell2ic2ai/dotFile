@@ -10,3 +10,7 @@ Then in emacs use M-x package-install-seleted-packages to install the plugins.
 First install Vundle in https://github.com/VundleVim/Vundle.vim
 
 Then just copy vimrc into your ~/.vimrc and you will have a good basic setup
+
+# SpaceVim
+Install SpaceVim with UserGuide https://spacevim.org/cn/quick-start-guide/
+copy init.toml in ~/.SpaceVim.d/
